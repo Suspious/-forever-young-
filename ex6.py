@@ -1,4 +1,4 @@
-from RobotArm import RobotArm
+from RobotArm import RobotArm 
 robotArm = RobotArm('exercise 6')
 robotArm.moveRight();
 robotArm.moveRight();
