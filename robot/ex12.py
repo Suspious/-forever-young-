@@ -1,9 +1,9 @@
 from RobotArm import RobotArm
 
 robotArm = RobotArm('exercise 12')
-
+robotArm.speed = 5
 # Jouw python instructies zet je vanaf hier:
-for i in range(1,20):
+for i in range(1,30):
     robotArm.grab()
     kleur = robotArm.scan()
     if kleur != "red":

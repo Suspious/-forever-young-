@@ -1,7 +1,9 @@
 import random
-randomding = random.randint(1, 9)
+randomding = random.randint(1, 999)
 randomding = randomding + 1
 score = 0 
+print(randomding)
+keer = int(input('hoeveel keer wil je spelen? '))
 for i in range(1, 21):
     x = int(input("raad je getal? \n"))
     if randomding ==x:
@@ -20,6 +22,12 @@ for i in range(1, 21):
         vraag2 = input("wil je nog een keer proberen? ")
         if vraag2 == "nee":
             break
+    x2 = randomding - x
+    if x2 >= -50 <= 50:
+        print("je bent warm")
+    if x2 >= -20 <= 20:
+        print("je bent heel warm")
+    
 
 print("je score is", score)
 
